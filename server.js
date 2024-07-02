@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
     
     if (user) {
         req.session.login = login;
-        res.render('index4', { login: login });
+        res.render('index3', { login: login });
     } else {
         res.render('index1');
     }
@@ -41,7 +41,7 @@ app.post('/', (req, res) => {
 // Rota para servir a página inicial
 app.get('/', (req, res) => {
     if (req.session.login) {
-        res.render('index4', { login: req.session.login });
+        res.render('index3', { login: req.session.login });
     } else {
         res.render('index1');
     }

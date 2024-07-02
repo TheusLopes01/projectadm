@@ -12,22 +12,22 @@
     <div class="container-md">
         <div class="position-absolute top-50 start-50 translate-middle">
             <br>
-            <div class="border-primary p-5 mb-2 rounded bg-white text-black">
+            <div class="border-primary p-5 mb-2 rounded bg-black">
                 <h1 class="text-center fs-1 lh-lg">Cadastro</h1>
                 <form id="cadastroForm" class="row g-3" method="POST" action="/register">
                     <div class="col-md-6">
                         <label for="inputNome" class="form-label">Novo usuário</label>
-                        <input type="text" class="form-control" id="inputUser" name="usuario">
+                        <input type="text" class="form-control" id="inputUser" name="usuario" minlength="5" maxlength="15" placeholder="Ex: AndréSilva5941 Máx. 15 caracteres!" required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputSobrenome" class="form-label">Nova senha</label>
-                        <input type="password" class="form-control" id="inputPassword" name="senha">
+                        <input type="password" class="form-control" id="inputPassword" name="senha" minlength="8" maxlength="8" placeholder="Máx. 8 caracteres!" required>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Cadastrar-se</button>
                     </div>
                     <div class="col-12">
-                        <p>Já tem uma conta? <a class="link-offset-1 link-underline-light link-underline-opacity-25" href="/index2.html">Entrar</a></p>
+                        <p>Já tem uma conta? <a class="link-offset-1 link-underline-light link-underline-opacity-25" href="/index1.html">Entrar</a></p>
                     </div>
                 </form>
             </div>
